@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: #5299e0;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin: auto;
+    font-size: 40pt;
+}
+
+.scene_div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+}
+
+#scene {
+    b-ackground-color: #f6f6fF;
+}
+
+#output {
+    position: absolute;
+    float: right;
+    top: 10px;
+    right: 10px;
+    width: 640px;
+    height: 90%;
+    padding: 0px;
+    margin: 5px;
+
+    background-color: #f6f6f6;
+    overflow-y: scroll;
+    font-family: monospace;
+}
+
+.error_msg {
+    color: #f00;
+    margin: 2px;
+}
+.warning_msg {
+    color: #00f;
+    margin: 2px;
+}
+.info_msg {
+    color: #666;
+    margin: 2px;
+}
+
+.movable_div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+}

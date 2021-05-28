@@ -1,0 +1,48 @@
+<HTML>
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/settings.js"></script>
+    <script src="./js/logger.js"></script>
+    <!-- Classes ----------------------------->
+    <script src="./js/world.js"></script>
+    <!-- Main -------------------------------->
+    <script src="./js/main.js"></script>
+
+    <script type="text/javascript">
+        // Invoke main function wheh page is loaded
+        window.onload = main;
+    </script>
+</head>
+
+<body onkeydown="keyProcessor(event, 1)" onkeyup="keyProcessor(event, 0)">
+    <table>
+        <tr>
+            <td> <h1>m&lambda;z&Sigma;</h1> </td>
+            <td>
+                <br>
+                <form>
+                    <label for="fname">Noisy moving (0.0 - 1.0):</label>
+                    <input type="text" id="noisy" name="noisy" value="?"><br>
+                    <input type="button" value="Apply" onclick="applyNoisy()">
+                </form>
+            </td>
+        </tr>
+    </table> 
+
+    <div id="scene" class="scene_div">
+    </div>
+
+    <div class="movable_div" id="chest_div">
+        <img id="chest" src="./img/chest2.png">
+    </div>
+
+    <div class="movable_div" id="bot_div">
+        <img id="bot" src="./img/bot.png">
+    </div>
+
+    <div id="output"></div>
+</body>
+
+</HTML>
